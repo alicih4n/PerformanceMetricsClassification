@@ -1,35 +1,46 @@
-# Performance Metrics for Classification
+# Performance Metrics Classification Workshop
 
-This notebook provides an interactive introduction to **performance metrics used in evaluating classification models**. It is adapted from Aurélien Géron's Chapter 3 notebook under the Apache v2 License.
+## Use Case: MNIST Image Classification
 
-## Purpose
+This repository contains the completed workshop for the Performance Metrics Classification activity. The project focuses on evaluating binary classifiers (specifically differentiating the digit '5' from other digits) using the MNIST dataset.
 
-The focus is on **evaluating classifiers**, not on training them. Students will explore key metrics used to assess classification performance, such as:
+## Workshop Overview
 
-- Accuracy
-- Precision
-- Recall
-- F1 Score
-- Confusion Matrix
-- ROC Curve and AUC
+The primary goal of this workshop is to understand and implement various performance metrics for classification problems, moving beyond simple accuracy to more robust measures like Precision, Recall, F1 Score, and ROC/AUC.
 
-## Learning Format
+**Key Activities:**
+1.  **Data Preparation**: Loading the MNIST dataset and converting it into a binary classification problem ("Is this a 5?").
+2.  **Model Training**: Training a Stochastic Gradient Descent (SGD) classifier.
+3.  **Evaluation**:
+    -   **Accuracy**: Analyzing why accuracy can be misleading on skewed datasets.
+    -   **Confusion Matrix**: Visualizing True Positives, False Positives, True Negatives, and False Negatives.
+    -   **Precision & Recall**: Understanding the trade-off between exactness and completeness.
+    -   **F1 Score**: Calculating the harmonic mean of precision and recall.
+    -   **Precision-Recall Curve**: Visualizing the trade-off at different thresholds.
+    -   **ROC Curve & AUC**: Evaluating the true positive rate vs. false positive rate.
+4.  **Model Comparison**: Comparing SGD with a RandomForestClassifier.
 
-This notebook is designed for **active learning** in a classroom setting. Students are encouraged to:
+## Summary of Insights (Talking Points)
 
-- Run code cells during instruction
-- Respond to questions marked "_To the student_" in new cells
-- Take notes and annotate the notebook
-- Commit and push their personalized version to their own repository
+Based on the "To the student" sections in the notebook:
 
-## What is Classification?
+-   **Classification Problem**: Defined as identifying which category an observation belongs to. A **Classifier** is the algorithm performing this mapping.
+-   **Preprocessing**: We converted the multiclass target vector (`y`) into a boolean vector (`y_train_5`). `True` represents the digit 5, and `False` represents all other digits. The feature matrix `X` remained unchanged as the pixel data is the same for binary or multiclass tasks.
+-   **Cross-Validation**: Used `cross_validate` with `cv=3` to split the training data into 3 folds, training the model 3 times and testing on the held-out fold each time. This provides a more robust estimate of model performance than a single train/test split.
+-   **The Accuracy Trap**:
+    -   The SGD classifier achieved ~95-96% accuracy.
+    -   However, since only ~10% of the images are '5's, a naive classifier that *always* predicts "Not-5" would achieve ~90% accuracy.
+    -   This highlights that accuracy is a poor metric for imbalanced datasets (skewed classes).
+-   **F1 Score**: Calculated manually using TP, FP, and FN. The harmonic mean (F1) is preferred over the arithmetic mean because it penalizes extreme values (e.g., if Recall is very low, F1 will be low, unlike the arithmetic mean).
+-   **Random Forest Superiority**: The Random Forest classifier significantly outperformed the SGD classifier, achieving an AUC of ~0.99 compared to SGD's ~0.96, demonstrating the power of ensemble methods for this task.
 
-Classification is a supervised learning task where the goal is to assign input data to one of several predefined categories. A **classifier** is an algorithm or function that performs this mapping from input features to class labels.
+## Repository Contents
 
-Examples include:
-- Email spam detection
-- Medical diagnosis
-- Image recognition
+-   `PerformanceMetricsClassification.ipynb`: The main workshop notebook with code, visualizations, and answers to student questions.
+-   `requirements.txt`: Python dependencies.
 
-For more background, see the Wikipedia article on classification and classification algorithms.
+## Team Members
 
+-   **Name**: [Student Name]
+-   **Student ID**: [Student ID]
+-   **GitHub Repo**: https://github.com/alicih4n/PerformanceMetricsClassification
