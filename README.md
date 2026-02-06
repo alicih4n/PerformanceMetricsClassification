@@ -6,9 +6,7 @@
     *   **Student ID**: 9091405
 *   **Name**: Lohith Reddy Danda
     *   **Student ID**: 9054470
-*   **Name**: Roshan Bartaula
-    *   **Student ID**: [Student ID Unknown/Not Provided]
-    *   **Note**: Absent. No contribution to this project.
+
 
 **GitHub Repo**: [https://github.com/alicih4n/PerformanceMetricsClassification.git](https://github.com/alicih4n/PerformanceMetricsClassification.git)
 
