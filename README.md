@@ -50,3 +50,44 @@ Based on the "To the student" sections in the notebook:
 
 -   `PerformanceMetricsClassification.ipynb`: The main workshop notebook with code, visualizations, and answers to student questions.
 -   `requirements.txt`: Python dependencies.
+
+## How to Run This Project
+
+If you are starting from zero, follow these steps to set up the environment and run the notebook:
+
+### 1. Prerequisites
+Ensure you have **Python** (version 3.8 or higher) and **Git** installed on your system.
+
+### 2. Clone the Repository
+Open your terminal or command prompt and run:
+```bash
+git clone https://github.com/alicih4n/PerformanceMetricsClassification.git
+cd PerformanceMetricsClassification
+```
+
+### 3. Set Up a Virtual Environment (Recommended)
+It is best practice to use a virtual environment to manage dependencies.
+**Mac/Linux:**
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+**Windows:**
+```bash
+python -m venv venv
+venv\Scripts\activate
+```
+
+### 4. Install Dependencies
+Install the required Python libraries using the `requirements.txt` file:
+```bash
+pip install -r requirements.txt
+```
+
+### 5. Run the Notebook
+Launch Jupyter Notebook:
+```bash
+jupyter notebook
+```
+This will open your browser. Click on `PerformanceMetricsClassification.ipynb` to open it. Run the cells sequentially (Shift + Enter) to see the code and analysis.
+
