@@ -10,9 +10,10 @@
 ### Student Information
 
 **Name**: Ali Cihan Ozdemir  
-**Student ID**: [Insert ID Here]
+**Student ID**: 9091405
 
-*(Please update your Student ID before finalizing)*
+**Name**: Lohith Reddy Danda  
+**Student ID**: 9054470
 
 ---
 

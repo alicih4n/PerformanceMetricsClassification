@@ -41,6 +41,8 @@ Based on the "To the student" sections in the notebook:
 
 ## Team Members
 
--   **Name**: [Student Name]
--   **Student ID**: [Student ID]
+-   **Name**: Ali Cihan Ozdemir
+    -   **Student ID**: 9091405
+-   **Name**: Lohith Reddy Danda
+    -   **Student ID**: 9054470
 -   **GitHub Repo**: https://github.com/alicih4n/PerformanceMetricsClassification
