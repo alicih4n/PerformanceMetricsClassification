@@ -1,5 +1,17 @@
 # Performance Metrics Classification Workshop
 
+## Team Members
+
+*   **Name**: Ali Cihan Ozdemir
+    *   **Student ID**: 9091405
+*   **Name**: Lohith Reddy Danda
+    *   **Student ID**: 9054470
+*   **Name**: Roshan Bartaula
+    *   **Student ID**: [Student ID Unknown/Not Provided]
+    *   **Note**: Absent. No contribution to this project.
+
+**GitHub Repo**: [https://github.com/alicih4n/PerformanceMetricsClassification.git](https://github.com/alicih4n/PerformanceMetricsClassification.git)
+
 ## Use Case: MNIST Image Classification
 
 This repository contains the completed workshop for the Performance Metrics Classification activity. The project focuses on evaluating binary classifiers (specifically differentiating the digit '5' from other digits) using the MNIST dataset.
@@ -38,11 +50,3 @@ Based on the "To the student" sections in the notebook:
 
 -   `PerformanceMetricsClassification.ipynb`: The main workshop notebook with code, visualizations, and answers to student questions.
 -   `requirements.txt`: Python dependencies.
-
-## Team Members
-
--   **Name**: Ali Cihan Ozdemir
-    -   **Student ID**: 9091405
--   **Name**: Lohith Reddy Danda
-    -   **Student ID**: 9054470
--   **GitHub Repo**: https://github.com/alicih4n/PerformanceMetricsClassification
